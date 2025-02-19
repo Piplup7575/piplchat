@@ -1,7 +1,7 @@
 # piplchat
 low quality socket.io chatroom  
   
-real simple, made in ~6 hours  
+real simple, made in ~6 hours in the cafe huddle, ~9 hours total  
 requires node, express, and socket.io  
   
 demo at https://piplchat.glitch.me/  
