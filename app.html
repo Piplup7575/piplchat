@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>piplchat</title>
+    <link rel="icon" type="image/x-icon" href="hmmm.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (
+        window.self !== window.top //inside an iframe
+      );
+      else window.location = "/index.html"; // Outside
+    </script>
+  </head>
+  <body>
+    <ul class="pages">
+      <li class="chat page">
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+        <input
+          class="inputMessage"
+          placeholder="Message the chat"
+          maxlength="280"
+        />
+      </li>
+      <li class="login page">
+        <div class="form">
+          <h3 class="title">What's your nickname?</h3>
+          <input class="usernameInput" type="text" maxlength="16" />
+        </div>
+      </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
